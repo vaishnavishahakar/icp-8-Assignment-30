@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-30</title>
+
+    <style>
+        .app-title{
+            text-align: center;
+        }
+        .img-bulb{
+            height: 150px;
+            display: block;
+            margin: 10px auto;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+        }
+        .btn-toggle{
+            margin: 10px 30px;
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 class="app-title">Bulb Toggler</h1>
+    <img src="./bulb-off.png" class="img-bulb" id="img-bulb" />
+
+    <div class="btn-container">
+        <button type="button" class="btn-toggle" onclick="bulbOn()">ON</button>
+        <button type="button" class="btn-toggle" onclick="bulbOff()">OFF</button>
+    </div>
+
+    <script>
+        
+    </script>
 </body>
 </html>
