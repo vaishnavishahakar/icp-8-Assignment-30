@@ -30,12 +30,17 @@
     <img src="./bulb-off.png" class="img-bulb" id="img-bulb" />
 
     <div class="btn-container">
-        <button type="button" class="btn-toggle" onclick="bulbOn()">ON</button>
-        <button type="button" class="btn-toggle" onclick="bulbOff()">OFF</button>
+        <button type="button" class="btn-toggle" onclick="toggleBulb('on')">Toggle</button>
     </div>
 
     <script>
-        
+        function toggleBulb()
+        {
+            const bulbElement = document.getElementById("img-bulb")
+
+            bulbElement.src = bulbElement.src.includes("bulb-off.png") ?
+            "./bulb-on.png": "./bulb-off.png"
+        }
     </script>
 </body>
 </html>
