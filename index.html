@@ -66,11 +66,11 @@
     <h1 class="app-title">Bulb Toggler</h1>
 
     <div class="theme-selector-container">
-        <img src="sun.png" class="theme-select-icon" onclick="enableLight()" />
-        <img src="moon.png" class="theme-select-icon" onclick="enableDark()" />
+        <img src="./asset/sun.png" class="theme-select-icon" onclick="enableLight()" />
+        <img src="./asset/moon.png" class="theme-select-icon" onclick="enableDark()" />
     </div>
 
-    <img src="./bulb-off.png" class="img-bulb" id="img-bulb" />
+    <img src="./asset/bulb-off.png" class="img-bulb" id="img-bulb" />
 
     <div class="btn-container">
         <button type="button" class="btn-toggle btn-light" onclick="toggleBulb()" id="btn-toggle">Toggle</button>
@@ -80,9 +80,8 @@
         function toggleBulb()
         {
             const bulbElement = document.getElementById("img-bulb")
-
-            bulbElement.src = bulbElement.src.includes("bulb-off.png") ?
-            "./bulb-on.png": "./bulb-off.png"
+            bulbElement.src = bulbElement.src.includes("asset/bulb-off.png") ?
+            "asset/bulb-on.png": "asset/bulb-off.png"
         }
 
         function enableDark()
